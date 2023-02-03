@@ -20,7 +20,7 @@ document.querySelector(".form").addEventListener("submit", e=> {
   let bmax = b0 + 2 *hf* tg_30
   let amax = a0 + 2 *hf* tg_30
   let A_max = amax*bmax
-  let R = 1.7 * (r0 * (1+ k1*((bmax < 6 ? bmax: 6 )- 2)) + k2 * y*(d - 3))
+  let R = 1.7 * (r0 * (1+ k1*((bmax <= 6 ? bmax: 6 )- 2)) + k2 * y*(d - 3))
 
   let An = (k * N) / ((R/1.4) - hf*y_mt)
 
